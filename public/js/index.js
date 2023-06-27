@@ -17,8 +17,11 @@ const copyBtn = document.querySelector('#copyBtn');
 const toast = document.querySelector('.toast');
 
 
-const url = 'http://localhost:3000';
-const uploadUrl = 'http://localhost:3000/api/files';
+// const url = 'http://localhost:3000';
+// const uploadUrl = 'http://localhost:3000/api/files';
+
+const url = 'https://skayshare.onrender.com/';
+const uploadUrl = url + 'api/files';
 const maxAllowedFileSize = 200 * 1024 * 1024; // 200 MB
 
 dropZone.addEventListener('dragover', (e) => {
