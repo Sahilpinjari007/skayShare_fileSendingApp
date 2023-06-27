@@ -60,7 +60,13 @@ copyBtn.addEventListener('click', ()=>{
     fileURL.select();
     document.execCommand('copy');
     sharingContainer.style.display = 'none';
-    showToast('Link Copied!')
+    showToast('Link Copied!');
+    
+    sharingContainer.style.display = 'none';
+    bgProgress.style.width = `${0}%`;
+    percentDiv.innerText = 0;
+    progressBar.style.transform = `scaleX(${0})`;
+    fileInput.value = '';
 })
 
 
